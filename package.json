@@ -1,0 +1,19 @@
+{
+  "name": "nuggets-new",
+  "version": "1.0.0",
+  "description": "Nuggets Fansite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinTak/nuggets-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinTak/nuggets-new/issues"
+  },
+  "homepage": "https://github.com/JinTak/nuggets-new#readme"
+}
