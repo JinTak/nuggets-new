@@ -3,3 +3,18 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  background-image: linear-gradient(to right bottom,rgba($color-black, .4),rgba($color-blue-dark, 0.8)), url(../img/nuggets-new.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -15vh;
+  clip-path: polygon(0 15vh, 10% 0, 20% 15vh, 30% 0, 40% 15vh, 50% 0, 60% 15vh, 70% 0, 80% 15vh, 90% 0, 100% 15vh, 100% 100%, 0 100%);
+
+}
