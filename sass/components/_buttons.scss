@@ -51,3 +51,29 @@
     animation: fadeInBottom .5s ease-out .75s backwards;
   }
 }
+
+.btn-text {
+  &:link, 
+  &:visited {
+    color: $color-blue-light;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-blue-light;
+    padding: 3px 8px;
+    font-size: $default-font-size;
+
+    transition: all .2s;
+  }
+
+  &:hover {
+    background: $color-blue-light;
+    color: $color-white;
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+  }
+}

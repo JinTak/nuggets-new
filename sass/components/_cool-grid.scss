@@ -1,6 +1,8 @@
 .cool-grid {
   height: 400px;
   width: 100%;
+  min-height: 400px;
+  min-width: 400px;
   padding: 10px;
   border-radius: 5px;
   display: grid;
