@@ -1,3 +1,16 @@
+/*
+  0 - 600px:       Mobile
+  600 - 900px:     Tablet portrait
+  900 - 1200px:    Tablet landscape
+  [1200 -1800]     Default Normal Styles
+  1800+:           Large Desktop
+
+  $breakpoint choices:
+  - mobile 
+  - tab-port
+  - tab-land
+  - big-desktop
+*/
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -41,6 +54,18 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 35%; } }
 
 *,
 *::after,
@@ -290,9 +315,8 @@ body {
 
 .cool-grid {
   height: 400px;
-  width: 100%;
-  min-height: 400px;
-  min-width: 400px;
+  width: 400px;
+  margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
   display: grid;

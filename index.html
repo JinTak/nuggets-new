@@ -27,14 +27,15 @@
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span> About</a></li>
-        <li class="navigation__item"><a href="#tickets" class="navigation__link"><span>02</span> Ticket Packages</a></li>
-        <li class="navigation__item"><a href="#signup" class="navigation__link"><span>03</span> Sign Up</a></li>
+        <li class="navigation__item"><a href="#home" class="navigation__link"><span>01</span> Home</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span> About</a></li>
+        <li class="navigation__item"><a href="#tickets" class="navigation__link"><span>03</span> Ticket Packages</a></li>
+        <li class="navigation__item"><a href="#signup" class="navigation__link"><span>04</span> Sign Up</a></li>
       </ul>
     </nav>
   </div>
 
-  <header class="header">
+  <header id="home" class="header">
     <div class="header__logo-box">
       <a href="https://www.nba.com/nuggets/" target="_blank">
         <img src="img/nuggets-new-logo.png" alt="Logo" class="header__logo">
@@ -146,10 +147,10 @@
     <!-- --------------- -->
     <!-- TICKET PACKAGES -->
     <!-- --------------- -->
-    <section style="scroll-behavior: smooth;" id="tickets" class="section-packages">
+    <section class="section-packages">
 
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Most Popular Packages</h2>
+        <h2 id="tickets" class="heading-secondary">Most Popular Packages</h2>
       </div>
 
       <div class="row">
@@ -358,6 +359,7 @@
     </div>
   </section> -->
 
+  <script src="script.js"></script>
 </body>
 
 </html>
