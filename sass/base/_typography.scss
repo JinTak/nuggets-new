@@ -18,6 +18,11 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: fadeInTop 1s ease-in-out forwards;
+
+    @include respond(mobile) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -26,6 +31,10 @@ body {
     font-weight: 700;
     letter-spacing: 1.5rem;
     animation: fadeInBottom 1s ease-in-out forwards;
+
+    @include respond(mobile) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -40,6 +49,13 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(mobile) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

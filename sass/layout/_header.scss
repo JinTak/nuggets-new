@@ -6,6 +6,12 @@
   background-attachment: fixed;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 90% 80vh, 80% 95%, 70% 80vh, 60% 95%, 50% 80vh, 40% 95%, 30% 80vh, 20% 95%, 10% 80vh, 0 95%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 90% 80vh, 80% 95%, 70% 80vh, 60% 95%, 50% 80vh, 40% 95%, 30% 80vh, 20% 95%, 10% 80vh, 0 95%);
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;
