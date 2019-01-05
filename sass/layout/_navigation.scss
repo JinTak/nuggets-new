@@ -12,8 +12,12 @@
     top: 6rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
-
+    transition: all .2s;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   &__background {
     height: 6rem;
@@ -84,7 +88,6 @@
   // NAV ICON
   &__icon {
     @include centerMiddle;
-
       &,
       &::before,
       &::after {
@@ -103,13 +106,6 @@
 
       &::before {top: -.8rem;}
       &::after {top: .8rem;}
-  }
-
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
-  &__button:hover &__icon::after {
-    top: 1rem;
   }
 
   &__checkbox:checked + &__button &__icon {
